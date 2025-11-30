@@ -1,4 +1,4 @@
-const twoSumForFor = (nums, target) => {
+const getSumWithFor = (nums, target) => {
     for (let i = 0; i < nums.length; i++) {
         for (let j = i + 1; j < nums.length; j++) {
             if (nums[i] + nums[j] === target) {
@@ -8,7 +8,7 @@ const twoSumForFor = (nums, target) => {
     }
 };
 
-const twoSumMap = (nums, target) => {
+const getSumWithMap = (nums, target) => {
     const storage = new Map();
 
     for (let i = 0; i < nums.length; i++) {
@@ -23,7 +23,7 @@ const twoSumMap = (nums, target) => {
     }
 };
 
-const twoSumObject = (nums, target) => {
+const getSumWithObject = (nums, target) => {
     const storage = {};
 
     for (let i = 0; i < nums.length; i++) {
@@ -38,5 +38,6 @@ const twoSumObject = (nums, target) => {
     }
 };
 
-const result = twoSumForFor([10, 4, 0, 5, 6], 10);
+const result = getSumWithMap([10, 4, 0, 5, 6], 10);
+
 console.log(result);
