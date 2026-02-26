@@ -31,7 +31,6 @@ The result format is in the following example.
 Example 1:
 
 Input:
-
 Person table:
 +----------+----------+-----------+
 | personId | lastName | firstName |
